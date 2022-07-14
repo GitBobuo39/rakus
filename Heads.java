@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 
 public class Heads{
@@ -11,6 +12,11 @@ public static void main(String args[]){
     int count1=0;
     int count2=0;
 
+Scanner sc = new Scanner(System.in);
+System.out.println("Who are you?");
+System.out.print("> ");
+String name = sc.next();
+System.out.println("Hello, " + name + "!");
 
 
     System.out.println("Tossing a coin...");
@@ -32,10 +38,10 @@ public static void main(String args[]){
 
 if(count1>count2){
 
-      System.out.println("You won");
+      System.out.println(name +" won");
     }else{
 
-      System.out.println("You lost");
+      System.out.println(name +" lost");
     }
 
 
