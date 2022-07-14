@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class HeadOrTail{
+public class Heads{
 
 
 public static void main(String args[]){
@@ -27,6 +27,14 @@ public static void main(String args[]){
 
     System.out.println("Heads: " + count1 + ", Tails: " + count2);
 
+
+    if(count1>count2){
+
+      System.out.println("You won");
+    }else{
+
+      System.out.println("You lost");
+    }
 }
 
 }
